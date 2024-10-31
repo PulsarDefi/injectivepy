@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "injective-py"
+name = "injectivepy"
 version = "1.7.1"
 description = "Injective Python SDK, with Exchange API Client"
 authors = ["Injective Labs <contact@injectivelabs.org>"]
