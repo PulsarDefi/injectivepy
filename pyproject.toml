@@ -35,7 +35,7 @@ protobuf = "^4.21.12"
 requests = "*"
 safe-pysha3 = "*"
 websockets = "*"
-web3 = "^6.0"
+web3 = ">=6.0.0b11"
 
 [tool.poetry.group.test.dependencies]
 pytest = "*"
