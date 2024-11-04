@@ -22,27 +22,8 @@ include = [
 
 [tool.poetry.dependencies]
 python = "3.11.*"
-aiohttp = "^3.8.3" # Version dependency due to https://github.com/InjectiveLabs/sdk-python/security/dependabot/18
-bech32 = "1.2.0"
-bip32 = "*"
-ecdsa = "*"
-eip712 = "*"
-grpcio = "*"
-grpcio-tools = "*"
-hdwallets = "*"
-mnemonic = "*"
 protobuf = "^4.21.12"
-requests = "*"
-safe-pysha3 = "*"
-websockets = "*"
 
-[tool.poetry.group.test.dependencies]
-pytest = "*"
-pytest-asyncio = "*"
-pytest-grpc = "*"
-requests-mock = "*"
-pytest-cov = "^4.1.0"
-pytest-aioresponses = "^0.2.0"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.4.0"
