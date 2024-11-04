@@ -36,7 +36,6 @@ requests = "*"
 safe-pysha3 = "*"
 websockets = "*"
 
-
 [tool.poetry.group.test.dependencies]
 pytest = "*"
 pytest-asyncio = "*"
