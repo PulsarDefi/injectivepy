@@ -35,7 +35,7 @@ protobuf = "^4.21.12"
 requests = "*"
 safe-pysha3 = "*"
 websockets = "*"
-web3 = ">=6.0.0b11"
+web3 = { git = "https://github.com/PulsarDefi/web3.py", branch = "master" }
 
 [tool.poetry.group.test.dependencies]
 pytest = "*"
