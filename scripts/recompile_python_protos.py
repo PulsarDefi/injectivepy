@@ -67,7 +67,7 @@ def main():
     args = parser.parse_args()
 
     # Run the modification
-    modify_proto_files("pyinjective/proto", args.chain.upper())
+    modify_proto_files("injective_proto/proto", args.chain.upper())
 
 
 if __name__ == "__main__":
