@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from pyinjective.proto.tendermint.abci import types_pb2 as tendermint_dot_abci_dot_types__pb2
+from injective_proto.proto.tendermint.abci import types_pb2 as tendermint_dot_abci_dot_types__pb2
 
 
 class ABCIStub(object):

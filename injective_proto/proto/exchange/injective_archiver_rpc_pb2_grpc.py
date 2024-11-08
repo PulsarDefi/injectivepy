@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from pyinjective.proto.exchange import injective_archiver_rpc_pb2 as exchange_dot_injective__archiver__rpc__pb2
+from injective_proto.proto.exchange import injective_archiver_rpc_pb2 as exchange_dot_injective__archiver__rpc__pb2
 
 
 class InjectiveArchiverRPCStub(object):

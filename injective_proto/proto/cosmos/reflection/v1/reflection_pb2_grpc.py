@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from pyinjective.proto.cosmos.reflection.v1 import reflection_pb2 as cosmos_dot_reflection_dot_v1_dot_reflection__pb2
+from injective_proto.proto.cosmos.reflection.v1 import reflection_pb2 as cosmos_dot_reflection_dot_v1_dot_reflection__pb2
 
 
 class ReflectionServiceStub(object):

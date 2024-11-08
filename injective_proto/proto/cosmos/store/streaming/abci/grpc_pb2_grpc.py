@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from pyinjective.proto.cosmos.store.streaming.abci import grpc_pb2 as cosmos_dot_store_dot_streaming_dot_abci_dot_grpc__pb2
+from injective_proto.proto.cosmos.store.streaming.abci import grpc_pb2 as cosmos_dot_store_dot_streaming_dot_abci_dot_grpc__pb2
 
 
 class ABCIListenerServiceStub(object):

@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from pyinjective.proto.ibc.applications.interchain_accounts.host.v1 import tx_pb2 as ibc_dot_applications_dot_interchain__accounts_dot_host_dot_v1_dot_tx__pb2
+from injective_proto.proto.ibc.applications.interchain_accounts.host.v1 import tx_pb2 as ibc_dot_applications_dot_interchain__accounts_dot_host_dot_v1_dot_tx__pb2
 
 
 class MsgStub(object):

@@ -13,7 +13,7 @@ classifiers = [
     "Intended Audience :: Developers",
 ]
 packages = [
-    { include = "pyinjective" },
+    { include = "injective_proto" },
 ]
 include = [
     { path = "pyinjective/proto/**/*.py" },

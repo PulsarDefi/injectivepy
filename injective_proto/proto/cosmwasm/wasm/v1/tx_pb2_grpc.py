@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from pyinjective.proto.cosmwasm.wasm.v1 import tx_pb2 as cosmwasm_dot_wasm_dot_v1_dot_tx__pb2
+from injective_proto.proto.cosmwasm.wasm.v1 import tx_pb2 as cosmwasm_dot_wasm_dot_v1_dot_tx__pb2
 
 
 class MsgStub(object):

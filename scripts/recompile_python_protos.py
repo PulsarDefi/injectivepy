@@ -37,10 +37,8 @@ def rename_imports_in_file(file_path):
         with open(file_path, "r") as file:
             content = file.read()
 
-        # Replace all occurrences of 'pyinjective' with 'injective_proto' in the import statements
         new_content = content.replace("pyinjective", "injective_proto")
 
-        # Only overwrite the file if changes were made
         if new_content != content:
             with open(file_path, "w") as file:
                 file.write(new_content)
@@ -49,7 +47,6 @@ def rename_imports_in_file(file_path):
         print(f"Error processing file {file_path}: {e}")
 
 
-# Recursively walk through the directory and process all .py files
 def rename_imports_in_directory(base_dir):
     for root, dirs, files in os.walk(base_dir):
         for file in files:
@@ -70,8 +67,7 @@ def main():
     args = parser.parse_args()
 
     # Run the modification
-    # modify_proto_files("pyinjective/proto", args.chain.upper())
-    rename_imports_in_directory(BASE_DIR)
+    modify_proto_files("pyinjective/proto", args.chain.upper())
 
 
 if __name__ == "__main__":

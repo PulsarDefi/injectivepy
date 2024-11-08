@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-from pyinjective.proto.cosmos.app.v1alpha1 import query_pb2 as cosmos_dot_app_dot_v1alpha1_dot_query__pb2
+from injective_proto.proto.cosmos.app.v1alpha1 import query_pb2 as cosmos_dot_app_dot_v1alpha1_dot_query__pb2
 
 
 class QueryStub(object):
