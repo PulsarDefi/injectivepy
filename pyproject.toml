@@ -16,7 +16,7 @@ packages = [
     { include = "injective_proto" },
 ]
 include = [
-    { path = "pyinjective/proto/**/*.py" },
+    { path = "injective_proto/proto/**/*.py" },
     { path = "*.ini" },
 ]
 
@@ -34,7 +34,7 @@ python-dotenv = "^1.0.1"
 
 
 [tool.flakeheaven]
-exclude = ["pyinjective/proto/*", ".idea/*"]
+exclude = ["injective_proto/proto/*", ".idea/*"]
 max_line_length = 120
 
 
@@ -55,7 +55,7 @@ include_trailing_comma = true
 force_grid_wrap = 0
 use_parentheses = true
 ensure_newline_before_comments = true
-skip_glob = ["pyinjective/proto/*", ".idea/*"]
+skip_glob = ["injective_proto/proto/*", ".idea/*"]
 
 
 [tool.black]
@@ -67,15 +67,15 @@ extend-exclude = '''
 # A regex preceded with ^/ will apply only to files and directories
 # in the root of the project.
 (
-  ^pyinjective/proto/.*
+  ^injective_proto/proto/.*
   | \.idea/.*
 )
 '''
 
 [tool.coverage.run]
 branch = true
-source_pkgs = ["pyinjective"]
-omit = ["pyinjective/proto/*"]
+source_pkgs = ["injective_proto"]
+omit = ["injective_proto/proto/*"]
 
 [tool.coverage.report]
 skip_empty = true
