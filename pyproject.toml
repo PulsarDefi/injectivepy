@@ -89,3 +89,6 @@ testpaths = ["tests"]
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+recompile_python_protos = "scripts.recompile_python_protos:main"
