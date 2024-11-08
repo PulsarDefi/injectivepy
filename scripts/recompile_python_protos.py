@@ -32,6 +32,32 @@ def modify_proto_files(directory: str, chain: str):
             print(f"Modified {filename}")
 
 
+def rename_imports_in_file(file_path):
+    try:
+        with open(file_path, "r") as file:
+            content = file.read()
+
+        # Replace all occurrences of 'pyinjective' with 'injective_proto' in the import statements
+        new_content = content.replace("pyinjective", "injective_proto")
+
+        # Only overwrite the file if changes were made
+        if new_content != content:
+            with open(file_path, "w") as file:
+                file.write(new_content)
+            print(f"Updated imports in {file_path}")
+    except Exception as e:
+        print(f"Error processing file {file_path}: {e}")
+
+
+# Recursively walk through the directory and process all .py files
+def rename_imports_in_directory(base_dir):
+    for root, dirs, files in os.walk(base_dir):
+        for file in files:
+            if file.endswith(".py"):
+                file_path = os.path.join(root, file)
+                rename_imports_in_file(file_path)
+
+
 def main():
     parser = argparse.ArgumentParser(description="Modify Protobuf Python files to use a custom DescriptorPool.")
     parser.add_argument(
@@ -44,7 +70,8 @@ def main():
     args = parser.parse_args()
 
     # Run the modification
-    modify_proto_files("pyinjective/proto", args.chain.upper())
+    # modify_proto_files("pyinjective/proto", args.chain.upper())
+    rename_imports_in_directory(BASE_DIR)
 
 
 if __name__ == "__main__":
